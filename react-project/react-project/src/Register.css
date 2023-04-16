@@ -1,0 +1,6 @@
+.full{
+    display: flex;
+  justify-content: center;
+  width: 200%;
+  background-color: grey;
+}

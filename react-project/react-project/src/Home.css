@@ -1,0 +1,41 @@
+.body{
+    background-color: rgb(137, 129, 142);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    
+    
+    
+    
+}
+.image-wrapper{
+    display: flex;
+    position: relative;
+    width: 0px;
+    height: 0px;
+
+}
+.body-img {
+    width: 20px;
+    height: 200px;
+
+}
+.image-text{
+    position: absolute;
+    text-align: center;
+    bottom: 40%;
+    font-weight: 600;
+
+}
+.btn{
+    margin-top: 10px;
+    border-radius: 10px;
+    color: rgb(181, 146, 146);
+    background-color: rgb(55, 92, 92);
+
+}
+.footer{
+    
+}
