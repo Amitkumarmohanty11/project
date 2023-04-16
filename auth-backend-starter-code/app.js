@@ -52,7 +52,7 @@ app.get('/register', async(req,res) => {
   }
 })
 
-app.get('/register/_id', async(req,res) => {
+app.get('/register/:id', async(req,res) => {
   try{
         const user = await User.findById(req.params.id)
         res.json(user)
