@@ -13,7 +13,7 @@ function Profile() {
     useEffect(() => {
         const configuration = {
             method: 'get',
-            url: "http://localhost:3000/register/_id",
+            url: "http://localhost:3000/register/:id",
             headers: {
                 Authorization: `Bearer ${token}`
             }
