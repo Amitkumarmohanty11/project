@@ -199,6 +199,24 @@ app.post('/request',( request , response ) =>{
  })
 })
 
+app.get('/request', async(req,res) => {
+  try{
+        const requestdatas = await Requestdata.find()
+        res.json(requestdatas)
+  }catch(err){
+    res.send('Error ' + err)
+  }
+})
+
+
+app.get('/request/:id', async(req,res) => {
+  try{
+        const requestdata = await Requestdata.findById(req.params.id)
+        res.json(requestdata)
+  }catch(err){
+    res.send('Error ' + err)
+  }
+})
 
 
 
@@ -261,16 +279,7 @@ app.get("/dashboard", auth, (request , response) =>{
   });
 })
 
-//profile
-// app.get("/profile", auth, (request , response) =>{
 
-  
-//   response.send({
-//     id: "_id",
-//     name: "name",
-//     email:"email"
-//   });
-// })
 
 
 module.exports = app;
